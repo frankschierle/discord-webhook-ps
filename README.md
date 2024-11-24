@@ -33,8 +33,8 @@ $message = [DiscordMessage]::new().
         WithThumbnail($ghAssetsBase + '/thumbnail.png').
         WithField('Tip of the day', 'You can always use `Get-Help <command name>` to get the documentation of a command.').
         WithField('Joke of the day', 'To the guy who invented zero: Thanks for nothing!').
-        WithField('Day of week', 'Monday', $true).
-        WithField('Day of month', '25', $true).
+        WithInlineField('Day of week', 'Monday').
+        WithInlineField('Day of month', '25').
         WithImage($ghAssetsBase + '/image.png').
         WithFooter('Created with Discord Webhook PowerShell module', $ghAssetsBase + '/footer.png').
         WithTimestamp([DateTime]::UtcNow).
