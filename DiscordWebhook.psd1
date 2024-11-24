@@ -10,8 +10,8 @@
     PrivateData = @{
         PSData = @{
             Tags = @('Discord', 'Webhook', 'Webhoooks', 'Chat')
-            ProjectUri = ''
-            LicenseUri = ''
+            ProjectUri = 'https://github.com/frankschierle/discord-webhook-ps'
+            LicenseUri = 'https://github.com/frankschierle/discord-webhook-ps/blob/main/LICENSE'
             RequireLicenseAcceptance = $false
         }
     }
