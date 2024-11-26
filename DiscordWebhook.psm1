@@ -48,7 +48,7 @@ class DiscordEmbed {
     [int]
     $Color
 
-    [DateTime]
+    [System.Nullable[DateTime]]
     $Timestamp
 
     [DiscordEmbedFooter]
@@ -98,8 +98,13 @@ class DiscordEmbed {
         return $this
     }
 
-    [DiscordEmbed] WithTimestamp([datetime] $timestamp) {
-        $this.Timestamp = $timestamp.ToUniversalTime()
+    [DiscordEmbed] WithTimestamp([System.Nullable[DateTime]] $timestamp) {
+        if ($timestamp) {
+            $this.Timestamp = $timestamp.ToUniversalTime()
+        } else {
+            $this.Timestamp = $null
+        }
+
         return $this
     }
 
