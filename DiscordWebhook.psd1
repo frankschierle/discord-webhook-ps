@@ -1,5 +1,5 @@
 @{
-    ModuleVersion = '1.0.0'
+    ModuleVersion = '1.0.1'
     GUID = 'db212c04-c50d-4f13-972a-5a395c5687f0'
     Author = 'Frank Schierle'
     Description = 'A simple PowerShell module to send Discord messages using webhooks.'
